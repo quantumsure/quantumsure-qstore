@@ -1,0 +1,48 @@
+{
+  "name": "quantumsure-qstore",
+  "version": "0.1.0",
+  "description": "Quantum-resistant field-level encryption for client data. Encrypt before storage, decrypt on read — plaintext never leaves your environment.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "quantum",
+    "post-quantum",
+    "encryption",
+    "field-level",
+    "ml-kem",
+    "kyber",
+    "zero-knowledge",
+    "quantumsure"
+  ],
+  "author": "QuantumSure",
+  "license": "MIT",
+  "dependencies": {
+    "mlkem": "^2.3.1",
+    "@noble/ciphers": "^1.0.0",
+    "buffer": "^6.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "tsup": "^8.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
