@@ -1,6 +1,6 @@
 {
   "name": "quantumsure-qstore",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Quantum-resistant field-level encryption for client data. Encrypt before storage, decrypt on read — plaintext never leaves your environment.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

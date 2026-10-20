@@ -8,4 +8,5 @@
 
 export { qstoreEncrypt } from "./encrypt";
 export { qstoreDecrypt } from "./decrypt";
+export { encryptFileBytes, decryptFileBytes } from "./file";
 
